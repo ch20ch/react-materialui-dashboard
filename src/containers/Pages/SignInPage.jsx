@@ -15,7 +15,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { createMuiTheme, withStyles } from '@material-ui/core/styles';
 
-import { login } from '../../actions/auth';
+import { login } from '../../home/actions/auth';
 
 const theme = createMuiTheme();
 

@@ -20,7 +20,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import { createMuiTheme, withStyles } from '@material-ui/core/styles';
-
+import Leaves from '../../leaves';
+import Button from '@material-ui/core/Button';
 // Routes
 import { Route } from 'react-router-dom';
 import Routes from './routes';
@@ -29,7 +30,7 @@ import Routes from './routes';
 import Sidebar from '../Sidebar';
 
 // Actions
-import { logout } from '../../actions/auth';
+import { logout } from '../../home/actions/auth';
 
 // Dashboard style
 const drawerWidth = 240;
@@ -149,8 +150,11 @@ class App extends Component {
             >
               <MenuIcon />
             </IconButton>
+            {/* <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+              Leave Management System
+            </Typography> */}
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-              Dashboard
+            Leave Management System
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -185,7 +189,11 @@ class App extends Component {
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
           <Container maxWidth="lg" className={classes.container}>
-            {
+            
+          <Leaves />
+            
+          
+            {/* {
               Object.values(Routes).map((route) => {
                 const { exact, path, ...otherProps } = route;
 
@@ -198,7 +206,7 @@ class App extends Component {
                   />
                 );
               })
-            }
+            } */}
           </Container>
         </main>
       </div>

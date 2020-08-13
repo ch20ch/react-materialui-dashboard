@@ -13,14 +13,9 @@ const menuItems = [
     key: '',
   },
   {
-    label: 'Orders',
-    icon: 'shopping_cart',
-    key: 'orders',
-  },
-  {
-    label: 'Customers',
-    icon: 'people',
-    key: 'customers',
+    label: 'Leaves',
+    icon: 'list',
+    key: 'leaves',
   },
   {
     label: 'Reports',

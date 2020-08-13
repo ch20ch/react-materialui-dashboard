@@ -1,9 +1,9 @@
-import Orders from '../Orders';
+import leaves from '../../leaves';
 
 export default {
-  ORDERS: {
-    component: Orders,
+  LEAVES: {
+    component: leaves,
     exact: true,
-    path: 'orders',
+    path: 'leaves',
   },
 };
